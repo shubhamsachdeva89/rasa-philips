@@ -1,0 +1,98 @@
+version: "2.0"
+rules:
+- rule: Greet user
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+- rule: covid_hospitalization_expense_info
+  steps:
+  - intent: Hospitalization expenses
+  - action: utter_covid_hosp_exp
+- rule: covid_hospitalization_support
+  steps:
+  - intent: Emergency hotline and hospitalization support
+  - action: utter_hospitalization_support
+- rule: covid_homecare_expense_support
+  steps:
+  - intent: Homecare
+  - action: utter_homecare_expenses
+- rule: Thank you
+  steps:
+  - intent: thanks
+  - action: utter_further_help
+- rule: Bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_i_am_a_bot
+- rule: doctor_consultation_OC_8AM-7PM_info
+  steps:
+  - intent: Online consultation between 8AM-7PM
+  - action: utter_OC_8AM-7PM
+- rule: doctor_consultation_OC_9AM-9PM_info
+  steps:
+  - intent: Online consultation between 9AM-9PM
+  - action: utter_OC_9AM-9PM
+- rule: doctor_consultation
+  steps:
+  - intent: Doctor consultation
+  - action: utter_online_doctor_consultation
+- rule: covid_hospitalization_support_Gurgaon_info
+  steps:
+  - intent: Gurgaon
+  - action: utter_Gurgaon_hosp_support
+- rule: covid_hospitalization_support_Pune_info
+  steps:
+  - intent: Pune
+  - action: utter_Pune_hosp_support
+- rule: covid_hospitalization_support_Mumbai_info
+  steps:
+  - intent: Mumbai
+  - action: utter_Mumbai_hosp_support
+- rule: covid_hospitalization_support_Bangalore_info
+  steps:
+  - intent: Bangalore
+  - action: utter_Bangalore_hosp_support
+- rule: covid_hospitalization_support_Chennai_info
+  steps:
+  - intent: Chennai
+  - action: utter_Chennai_hosp_support
+- rule: covid_hospitalization_support_Kolkata_info
+  steps:
+  - intent: Kolkata
+  - action: utter_Kolkata_hosp_support
+- rule: home_testing_service_Karnataka_info
+  steps:
+  - intent: In-house testing service
+  - action: utter_home_testing_service
+- rule: Clinic testing services in Karnataka
+  steps:
+  - intent: Clinic testing service
+  - action: utter_clinic_testing_service
+- rule: Acknowledgement
+  steps:
+  - intent: Acknowledgement
+  - action: utter_acknowledgement
+- rule: SPOC
+  steps:
+  - intent: SPOC
+  - action: utter_spoc
+- rule: paid private labs
+  steps:
+  - intent: Private labs
+  - action: utter_paid_private_labs
+- rule: Paid govt testing center
+  steps:
+  - intent: Govt labs
+  - action: utter_paid_gov_labs
+- rule: Pan India Aid
+  steps:
+  - intent: Pan India aid
+  - action: utter_pan_India_aid
+- rule: Proning
+  steps:
+  - intent: Proning
+  - action: utter_proning
+- rule: Hot meals delivery
+  steps:
+  - intent: Hot meals delivery
+  - action: utter_hot_meals_delivery

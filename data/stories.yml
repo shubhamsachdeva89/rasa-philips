@@ -1,0 +1,444 @@
+version: "2.0"
+stories:
+- story: greet and home_food_service_India_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Home food services
+  - action: utter_home_food_services
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and covid_hospitalization_support_Gurgaon_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Emergency hotline and hospitalization support
+  - action: utter_hospitalization_support
+  - intent: Gurgaon
+  - action: utter_Gurgaon_hosp_support
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and covid_hospitalization_support_Pune_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Emergency hotline and hospitalization support
+  - action: utter_hospitalization_support
+  - intent: Pune
+  - action: utter_Pune_hosp_support
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and covid_hospitalization_support_Mumbai_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Emergency hotline and hospitalization support
+  - action: utter_hospitalization_support
+  - intent: Mumbai
+  - action: utter_Mumbai_hosp_support
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and covid_hospitalization_support_Bangalore_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Emergency hotline and hospitalization support
+  - action: utter_hospitalization_support
+  - intent: Bangalore
+  - action: utter_Bangalore_hosp_support
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and covid_hospitalization_support_Chennai_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Emergency hotline and hospitalization support
+  - action: utter_hospitalization_support
+  - intent: Chennai
+  - action: utter_Chennai_hosp_support
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and covid_hospitalization_support_Kolkata_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Emergency hotline and hospitalization support
+  - action: utter_hospitalization_support
+  - intent: Kolkata
+  - action: utter_Kolkata_hosp_support
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and covid_homecare_expense_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Homecare
+  - action: utter_homecare_expenses
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and counselling_support_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Counselling support
+  - action: utter_counselling_support
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and doctor_consultation_OC_8AM-7PM_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Doctor consultation
+  - action: utter_online_doctor_consultation
+  - intent: Online consultation between 8AM-7PM
+  - action: utter_OC_8AM-7PM
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and doctor_consultation_OC_9AM-9PM_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Doctor consultation
+  - action: utter_online_doctor_consultation
+  - intent: Online consultation between 9AM-9PM
+  - action: utter_OC_9AM-9PM
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and oxygen_concentrator_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Oxygen concentrator
+  - action: utter_oxygen_concentrator
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and covid_hospitalization_expenses_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Hospitalization expenses
+  - action: utter_covid_hosp_exp
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and volunteer_team_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Volunteers
+  - action: utter_volunteers
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and home_isolation_service_India_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Home isolation services
+  - action: utter_home_isolation_services
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and ambulance_service_India_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Ambulance service India
+  - action: utter_ambulance_service_India
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and home_testing_service_Karnataka_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in Karnataka
+  - action: utter_resources_in_Karnataka
+  - intent: Testing centers
+  - action: utter_testing_center_Karnataka
+  - intent: In-house testing service
+  - action: utter_home_testing_service
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and clinic_free_testing_service_Karnataka_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in Karnataka
+  - action: utter_resources_in_Karnataka
+  - intent: Testing centers
+  - action: utter_testing_center_Karnataka
+  - intent: In-clinic testing service
+  - action: utter_clinic_testing_service
+  - intent: Free clinic testing service
+  - action: utter_free_clinic_testing_service
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and clinic_paid_govt_testing_service_Karnataka_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in Karnataka
+  - action: utter_resources_in_Karnataka
+  - intent: Testing centers
+  - action: utter_testing_center_Karnataka
+  - intent: In-clinic testing service
+  - action: utter_clinic_testing_service
+  - intent: Paid clinic testing service
+  - action: utter_paid_clinic_testing_service
+  - intent: Govt labs
+  - action: utter_paid_gov_labs
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and clinic_paid_private_testing_service_Karnataka_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in Karnataka
+  - action: utter_resources_in_Karnataka
+  - intent: Testing centers
+  - action: utter_testing_center_Karnataka
+  - intent: In-clinic testing service
+  - action: utter_clinic_testing_service
+  - intent: Paid clinic testing service
+  - action: utter_paid_clinic_testing_service
+  - intent: Private labs
+  - action: utter_paid_private_labs
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and ct_scan_center_Karnataka_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in Karnataka
+  - action: utter_resources_in_Karnataka
+  - intent: CT scan
+  - action: utter_ct_scan
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and ambulance_service_Karnataka_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in Karnataka
+  - action: utter_resources_in_Karnataka
+  - intent: Ambulance service Karnataka
+  - action: utter_ambulance_service_Karnataka
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and covid_hospital_bengaluru_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in Karnataka
+  - action: utter_resources_in_Karnataka
+  - intent: Designated Covid hospitals
+  - action: utter_designated_covid_hospitals
+  - intent: Bengaluru covid hospitals
+  - action: utter_bengaluru_covid_hospitals
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and covid_hospital_mysuru_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in Karnataka
+  - action: utter_resources_in_Karnataka
+  - intent: Designated Covid hospitals
+  - action: utter_designated_covid_hospitals
+  - intent: Mysuru covid hospitals
+  - action: utter_mysuru_covid_hospitals
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and covid_hospital_other_locations_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in Karnataka
+  - action: utter_resources_in_Karnataka
+  - intent: Designated Covid hospitals
+  - action: utter_designated_covid_hospitals
+  - intent: Other locations
+  - action: utter_other_locations
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and covid_state_govt_helpline_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in Karnataka
+  - action: utter_resources_in_Karnataka
+  - intent: Karnataka helpline
+  - action: utter_Karnataka_helpline
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and home_isolation_services_Karnataka_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in Karnataka
+  - action: utter_resources_in_Karnataka
+  - intent: Quarantine home
+  - action: utter_quarantine_home
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and home_food_services_Karnataka_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in Karnataka
+  - action: utter_resources_in_Karnataka
+  - intent: Hot meals delivery
+  - action: utter_hot_meals_delivery
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and pan_India_aid_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Pan India aid
+  - action: utter_pan_India_aid
+  - intent: thanks
+  - action: utter_further_help
+- story: Acknowledgement
+  steps:
+  - intent: Acknowledgement
+  - action: utter_acknowledgement
+- story: greet and sick_leave_India_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Sick leave
+  - action: utter_sick_leave
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and domiciliary_hospitalization_benefit_India_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Domiciliary hospitalization benefit
+  - action: utter_domiciliary_hospitalization_benefit
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and cashless_hospitalization_India_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: E-Card for cashless hospitalization
+  - action: utter_cashless_hospitalization
+  - intent: thanks
+  - action: utter_further_help
+- story: SPOCS_India_info
+  steps:
+  - intent: SPOC
+  - action: utter_spoc
+- story: greet and fabiflu_Karnataka_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in Karnataka
+  - action: utter_resources_in_Karnataka
+  - intent: Fabiflu
+  - action: utter_fabiflu
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and triage_Karnataka_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in Karnataka
+  - action: utter_resources_in_Karnataka
+  - intent: Triage
+  - action: utter_triage
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and oxygen_supply_Karnataka_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in Karnataka
+  - action: utter_resources_in_Karnataka
+  - intent: Supply of O2 products
+  - action: utter_supply_O2_products
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and health_advice_proning_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Fight Covid
+  - action: utter_fight_Covid
+  - intent: Proning
+  - action: utter_proning
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and health_advice_blackfungus_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Fight Covid
+  - action: utter_fight_Covid
+  - intent: Black fungus
+  - action: utter_black_fungus
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and live_bed_status_Karnataka_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in Karnataka
+  - action: utter_resources_in_Karnataka
+  - intent: Live bed status
+  - action: utter_live_bed_status
+  - intent: thanks
+  - action: utter_further_help
+- story: greet and car_rent_India_info
+  steps:
+  - intent: Hi bot
+  - action: utter_greet
+  - intent: Resources in India
+  - action: utter_resources_in_India
+  - intent: Car rent
+  - action: utter_car_rent
+  - intent: thanks
+  - action: utter_further_help
+- story: Bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_i_am_a_bot

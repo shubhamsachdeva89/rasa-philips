@@ -1,0 +1,449 @@
+version: "2.0"
+nlu:
+- intent: bot_challenge
+  examples: |
+    - Are you a bot?
+    - Am I talking to a human?
+    - Is this a chatbot?
+    - are you a real person?
+    - are you real?
+    - you are a bot, aren't you?
+- intent: thanks
+  examples: |
+    - Thanks
+    - Thank you
+    - Thank you so much
+    - Thanks bot
+    - Thanks for that
+    - cheers
+    - cheers bro
+    - ok thanks!
+    - thanks for the help
+    - amazing, thanks
+    - bye
+    - great
+- intent: Gurgaon
+  examples: |
+    - I am currently living in Gurgaon
+    - staying at gurgaon
+    - currently in Gurugram
+    - I live near Gurugram
+    - gurugram
+- intent: Pune
+  examples: |
+    - I am currently living in Pune
+    - staying at Pune
+    - I live near Pune
+    - poona
+- intent: Mumbai
+  examples: |
+    - I am currently living  in Mumbai
+    - staying at Mumbai
+    - I live near Bombay
+    - bombay
+- intent: Bangalore
+  examples: |
+    - I am currently living in Bangalore
+    - staying at Bangalore
+    - I live near bengaluru
+- intent: Chennai
+  examples: |
+    - I am currently living in Chennai
+    - staying at Chennai
+    - madras
+- intent: Kolkata
+  examples: |
+    - I am currently living in Kolkata
+    - staying at Kolkata
+    - I live in Calcutta
+- intent: Counselling support
+  examples: |
+    - Counselling support for employees and their family members
+    - I need counselling services
+    - Covid related counselling services
+    - Employee counselling
+    - Mental health counselling
+    - I am feeling stressed
+    - Work life balance
+    - How to manage work life balance
+- intent: Doctor consultation
+  examples: |
+    - Online doctor consultation
+    - Consult doctors for treatment
+    - Doctor advice
+    - I need to see a doctor
+    - Please give me a doctor's contact number
+    - i need to talk to doctor
+    - I urgently need a doctor's services
+    - get me in touch with a doctor
+    - doctor's availability for treatment
+    - I need to see a doctor near my place
+    - Help me to contact a doctor
+    - doctor's contact number
+- intent: Homecare
+  examples: |
+    - covid-19 Homecare expenses
+    - who will bear homecare covid treatment expenses
+    - Philips will bear homecare expenses for employees
+    - homecare expenses for employees
+    - homecare expenses for dependents
+    - Philips benefits for doctor consultation, pharmacy, diagnostics
+    - Home covid treatment plan
+    - Injection at home
+    - Nursing at home
+    - Packaged and Sterilized Kits
+    - Covid care at home
+    - nurse at home
+- intent: Emergency hotline and hospitalization support
+  examples: |
+    - Covid-19 emergency hotline and hospitalization support
+    - I need bed availability in my city
+    - covid emergency helpline
+    - I am in Gurgaon and i need hospital admission
+    - Emergency hotline in Gurgaon
+    - i need to know about bed availability in Gurgaon
+    - I am in Pune and i need hospital admission
+    - Emergency hotline in Pune
+    - i need to know about bed availability in Pune
+    - I am in Mumbai and i need hospital admission
+    - Emergency hotline in mumbai
+    - i need to know about bed availability in Mumbai
+    - I am in bangalore and i need hospital admission
+    - Emergency hotline in Bangalore
+    - i need to know about bed availability in Bangalore
+    - I am in chennai and i need hospital admission
+    - Emergency hotline in Chennai
+    - i need to know about bed availability in chennai
+    - I am in Kolkata and i need hospital admission
+    - Emergency hotline in kolkata
+    - i need to know about bed availability in Kolkata
+- intent: Hospitalization expenses
+  examples: |
+    - Covid-19 hospitalization expenses
+    - Who will bear Covid treatment related hospital expenditure
+    - medical insurance for covid treatment
+    - Will Philips cover Covid medical treatment?
+    - Will the medical insurance plan cover the hospitalization expenses?
+    - Will Philips cover PPE kit expenses?
+    - Will my Covid test related charges be reimbursed by Philips medical insurance?
+    - Hospital expenses coverage
+- intent: Online consultation between 8AM-7PM
+  examples: |
+    - Online doctor consultation between 8AM-7PM
+- intent: Online consultation between 9AM-9PM
+  examples: |
+    - Online doctor consultation between 9AM-9PM
+- intent: Oxygen concentrator
+  examples: |
+    - Employee Oxygen concentrator support
+    - employee support for oxygen concentrator
+    - who can use oxygen concentrator
+    - how long can one use oxygen concentrator
+    - I need oxygen concentrator
+    - Can I use oxygen concentrator indefinitely
+    - Is oxygen concentrator free to use
+    - Where is oxygen concentrator availabile
+    - Availability oxygen concentrator
+    - At which Philips office locations will the Equipment be available
+    - how to apply for oxygen concentrator?
+    - How will I pick up the Equipment?
+    - I am a HIC employee, but my dependent is in Bangalore. How do I pick up the Equipment?
+    - Dos and Donts on Usage and maintenance of the oxygen concentrator
+    - Is there a cap to apply if I have already used and returned the oxygen concentrator?
+    - Who to contact for emergency oxygen concentrator query
+    - How do I authorize oxygen concentrator if I am sick? And who should I authorize?
+    - Can I place request for oxygen concentrator over a call?
+    - Can I take oxygen concentrator to my home town
+    - How will I set up my oxygen concentrator?
+    - Will there be someone to install oxygen concentrator at my house
+    - What is the process to check if the equipment is working
+- intent: Resources in India
+  examples: |
+    - Covid resources in India
+    - What are the Philips covid related services in India
+    - philips services in India
+    - Philips resources in India
+    - Covid services by Philips in India
+    - Where are philips covid services available?
+    - Resources in india
+- intent: Ambulance service India
+  examples: |
+    - Ambulance Service in India
+    - i urgently need an Ambulance
+    - give me an ambulance contact in my area
+    - ambulance service in my city
+    - emrgency ambulance
+    - Is ambulance service available at my place
+    - Where can i get ambulance
+    - how do i contact ambulance
+    - I need ambulance helpline now
+- intent: Volunteers
+  examples: |
+    - Covid-19 Volunteers
+    - Who are the Volunteers
+    - how do i contact the Volunteers
+    - will volunteers come to my aid
+    - i need volunteer support
+    - get me in touch with a volunteer
+    - when are the volunteers available
+- intent: Resources in Karnataka
+  examples: |
+    - Covid Resources in Karnataka
+    - What are the Philips covid related services in Karnataka
+    - philips services in bengaluru
+    - BGLR philips services
+    - Philips resources in bengaluru
+    - Philips resources in Karnataka
+    - Covid services by Philips in bangalore
+    - Where are philips covid services available?
+- intent: Home isolation services
+  examples: |
+    - Home isolation services
+    - i need home isolation services in my city
+- intent: Home food services
+  examples: |
+    - Home food services in India
+    - food delivery in my city
+    - online food delivery to my home
+    - are home food services available at my place?
+- intent: Testing centers
+  examples: |
+    - Testing centers in Karnataka
+    - i need covid testing center helpline
+    - Nearest covid test center
+    - home covid testing service
+    - free covid testing centers
+    - government covid test centers
+    - private covid test centers
+    - Which covid test is available
+    - how much do I need to pay for a covid test
+    - how soon will I get the covid test report
+    - can I book an appointment at a covid test center
+    - are there walk in services in any covid test center
+    - Can I get my test report within 24 hours?
+    - can i receive the test report within 1-2 days?
+- intent: Free clinic testing service
+  examples: |
+    - Free clinic testing service Karnataka
+- intent: Paid clinic testing service
+  examples: |
+    - Paid clinic testing service Karnataka
+- intent: In-house testing service
+  examples: |
+    - In-house covid testing service Karnataka
+- intent: Private labs
+  examples: |
+    - Karnataka private covid testing labs
+- intent: In-clinic testing service
+  examples: |
+    - In-clinic covid testing service Karnataka
+- intent: Govt labs
+  examples: |
+    - Karnataka govt covid testing labs
+- intent: CT scan
+  examples: |
+    - CT scan Karnataka
+    - I urgently need CT scan service
+    - i need to see a gynaecologist
+    - I need MR services
+    - i need to see a general physician
+    - X Ray services in my city
+    - blood testing center hospital
+    - health check up center
+    - i need a physiotherapist
+    - i need to do a HRCT
+    - i need to get a blood test done
+    - general physician contact
+- intent: Ambulance service Karnataka
+  examples: |
+    - Ambulance Service in Karnataka
+    - i urgently need an Ambulance in bengaluru
+    - bangalore ambulance contact
+    - ambulance service in mysuru
+    - emrgency ambulance bangalore
+    - Karnataka emrgency ambulance
+    - Is ambulance service available in bangalore
+    - Where can i get ambulance services in bangalore
+    - contact ambulance BGLR
+    - I need ambulance helpline in bengaluru
+- intent: Designated Covid hospitals
+  examples: |
+    - Designated Covid hospitals in Karnataka
+    - covid hospitals in bangalore
+    - bengaluru covid treatment hospitals
+    - covid hospitals in Karnataka
+    - i need hospital contact near my phome
+    - where are covid treatment hospitals located?
+    - covid hospitals in mysuru
+    - emergency covid hospital helpline
+- intent: Bengaluru covid hospitals
+  examples: |
+    - Bengaluru covid hospitals
+- intent: Mysuru covid hospitals
+  examples: |
+    - Mysuru covid hospitals
+- intent: Other locations
+  examples: |
+    - Other locations
+- intent: Karnataka helpline
+  examples: |
+    - Karnataka helpline number
+    - covid related queries
+    - questions on covid-19 testing centers
+    - questions on covid vaccination
+    - Where can I get covid vaccine
+    - I need vaccine
+    - Covishield vaccine
+    - I need covaxin soon
+    - vaccination center near my home
+    - How soon can i get a vaccine?
+- intent: Quarantine home
+  examples: |
+    - Quarantine home Karnataka
+    - bengaluru home quarantine services
+    - i need home quarantine services in Bangalore
+- intent: Hot meals delivery
+  examples: |
+    - Hot meals delivery Karnataka
+    - Online food delivery in bangalore
+    - Bengaluru food delivery service
+    - food delivery in bangalore
+- intent: Acknowledgement
+  examples: |
+    - Who created you?
+    - Which team built the bot?
+    - Who built you?
+    - Do you know how you were made?
+    - In what way were you formed?
+    - Are you built using rasa?
+    - I'd like to know how you were created
+- intent: Sick leave
+  examples: |
+    - Can I get sick leave for covid19?
+    - I need sick leave
+    - Sick leave policy
+    - How do I apply for sick leave?
+    - Whom to contact for sick leave
+- intent: Domiciliary hospitalization benefit
+  examples: |
+    - domicile hospitalization policy
+    - Employees can cover cost of treatment availed at home for maximum up to 14 days per incident
+- intent: E-Card for cashless hospitalization
+  examples: |
+    - cashless hospital transaction
+    - employees can claim through cashless or reimbursement mode by following the instructions
+- intent: SPOC
+  examples: |
+    - Whom can I contact in my city?
+    - I need to contact a SPOC
+    - Availability of SPOCs
+    - Where can I find a SPOC?
+    - SPOC in my city
+    - SPOC contact
+- intent: Fabiflu
+  examples: |
+    - Where can I get fabiflu
+    - I urgently need fabiflu
+    - How much does fabiflu cost
+    - Pharmacy  selling fabiflu
+    - fabiflu emergency
+    - Can I get fabiflu nearby
+- intent: Triage
+  examples: |
+    - Triage center in Bangalore
+    - Where can i find a triage center
+    - triage center opening time availability
+    - find a triage center near my place
+- intent: Live bed status
+  examples: |
+    - I need bed availaibility in bengaluru
+    - covid hospital bed booking
+    - How can I get a hospital bed
+    - Hospital bed for covid treatment in Bangalore
+    - Bed access
+    - Book a bed in Bengaluru
+    - find available covid beds in bangalore
+    - urgently need a hospital bed
+- intent: Supply of O2 products
+  examples: |
+    - I need oxygen cylinder
+    - Oxygen supplier
+    - Oxygen products in my area
+    - urgent need of oxygen concentrator
+    - Oxygen regulator
+    - oxygen equipment supplier
+    - oxygen support in my area
+    - pulse oximeter
+- intent: Proning
+  examples: |
+    - How to improve lung oxygenation
+    - improve breathing comfort
+    - increase oxygen saturation in body
+    - How to perform proning
+    - Proning
+- intent: Black fungus
+  examples: |
+    - What is black fungus
+    - How to prevent black fungus
+    - What to do if i get black fungus
+    - How to cure black fungus
+    - Murcomycosis
+    - Manage black fungus
+- intent: Fight Covid
+  examples: |
+    - guidelines for covid patients
+    - How to take care of my health
+    - covid prevention
+    - Advice for fighting covid
+- intent: Pan India aid
+  examples: |
+    - ICU availability
+    - I need ventilator
+    - Redemsivir
+    - Plasma therapy
+    - Favipiravir medicine
+    - Cowin app vaccine registration
+    - Pan India aid
+- intent: Car rent
+  examples: |
+    - I need a sanitized car
+    - book a ride to vaccination center
+    - Rent a car
+    - Emergency van
+    - hire a bus
+    - book car for a ride
+    - car for travelling to hospital
+- intent: Hi bot
+  examples: |
+    - Hi bot
+    - hi
+    - Hey
+    - Hi
+    - greetings
+    - good morning
+    - Hi there
+    - Hello
+    - Hi again
+    - good afternoon
+    - good evening
+    - howdy
+    - Hello bot
+- synonym: Kolkata
+  examples: |
+    - Calcutta
+- synonym: Mumbai
+  examples: |
+    - Bombay
+- synonym: Bangalore
+  examples: |
+    - Bengaluru
+    - BLR
+- synonym: Pune
+  examples: |
+    - Poona
+- synonym: Chennai
+  examples: |
+    - Madras
+- synonym: Gurgaon
+  examples: |
+    - Gurugram

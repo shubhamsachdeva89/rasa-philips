@@ -1,0 +1,492 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- thanks:
+    use_entities: true
+- Hospitalization expenses:
+    use_entities: true
+- Emergency hotline and hospitalization support:
+    use_entities: true
+- Gurgaon:
+    use_entities: true
+- Pune:
+    use_entities: true
+- Mumbai:
+    use_entities: true
+- Bangalore:
+    use_entities: true
+- Chennai:
+    use_entities: true
+- Kolkata:
+    use_entities: true
+- Homecare:
+    use_entities: true
+- Counselling support:
+    use_entities: true
+- Doctor consultation:
+    use_entities: true
+- Online consultation between 8AM-7PM:
+    use_entities: true
+- Online consultation between 9AM-9PM:
+    use_entities: true
+- Oxygen concentrator:
+    use_entities: true
+- Resources in India:
+    use_entities: true
+- Ambulance Service India:
+    use_entities: true
+- Volunteers:
+    use_entities: true
+- Resources in Karnataka:
+    use_entities: true
+- Home isolation services:
+    use_entities: true
+- Home food services:
+    use_entities: true
+- Testing centers:
+    use_entities: true
+- Free clinic testing service:
+    use_entities: true
+- Paid clinic testing service:
+    use_entities: true
+- In-house testing service:
+    use_entities: true
+- Private labs:
+    use_entities: true
+- In-clinic testing service:
+    use_entities: true
+- Govt labs:
+    use_entities: true
+- CT scan:
+    use_entities: true
+- Ambulance service Karnataka:
+    use_entities: true
+- Mysuru covid hospitals:
+    use_entities: true
+- Other locations:
+    use_entities: true
+- Designated Covid hospitals:
+    use_entities: true
+- Bengaluru covid hospitals:
+    use_entities: true
+- Karnataka helpline:
+    use_entities: true
+- Quarantine home:
+    use_entities: true
+- Hot meals delivery:
+    use_entities: true
+- Useful links:
+    use_entities: true
+- Acknowledgement:
+    use_entities: true
+- Clinic testing service:
+    use_entities: true
+- Sick Leave:
+    use_entities: true
+- Domiciliary hospitalization benefit:
+    use_entities: true
+- E-Card for cashless hospitalization:
+    use_entities: true
+- SPOC:
+    use_entities: true
+- Fabiflu:
+    use_entities: true
+- Triage:
+    use_entities: true
+- Live bed status:
+    use_entities: true
+- Supply of O2 products:
+    use_entities: true
+- Self-care:
+    use_entities: true
+- Proning:
+    use_entities: true
+- Black fungus:
+    use_entities: true
+- Fight Covid:
+    use_entities: true
+- Pan India aid:
+    use_entities: true
+- Car rent:
+    use_entities: true
+- Sick leave:
+    use_entities: true
+- Ambulance service India:
+    use_entities: true
+- Hi bot:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_resources_in_India:
+  - buttons:
+    - payload: Hospitalization expenses
+      title: Hospitalization expenses
+    - payload: Emergency hotline and hospitalization support
+      title: Emergency hotline and hospitalization support
+    - payload: Homecare
+      title: Homecare
+    - payload: Counselling support
+      title: Counselling support
+    - payload: Doctor consultation
+      title: Doctor consultation
+    - payload: Oxygen concentrator
+      title: Oxygen concentrator
+    - payload: Ambulance service India
+      title: Ambulance service India
+    - payload: Volunteers
+      title: Volunteers
+    - payload: Home isolation services
+      title: Home isolation services
+    - payload: Home food services
+      title: Home food services
+    - payload: Pan India aid
+      title: Pan India aid
+    - payload: Sick leave
+      title: Sick leave
+    - payload: Domiciliary hospitalization benefit
+      title: Domiciliary hospitalization benefit
+    - payload: E-Card for cashless hospitalization
+      title: E-Card for cashless hospitalization
+    - payload: Car rent
+      title: Car rent
+    - payload: Hi bot
+      title: Previous query
+    text: 'We are providing the following Covid related services in India:'
+  utter_i_am_a_bot:
+  - text: I am a chatbot created by the Data and AI team, PHDSI, Bangalore
+  utter_noworries:
+  - text: My pleasure.
+  - text: You are welcome!
+  utter_covid_hosp_exp:
+  - buttons:
+    - payload: Resources in India
+      title: Resources in India
+    text: COVID-19 treatment related hospitalization is covered under your medical insurance plan. The sum insured and family dependents would be as per your selection for MyBenefits@Philips program. Cost of PPE and COVID-19 test charged by hospitals is payable under insurance.
+  utter_hospitalization_support:
+  - buttons:
+    - payload: Gurgaon
+      title: Gurgaon
+    - payload: Pune
+      title: Pune
+    - payload: Mumbai
+      title: Mumbai
+    - payload: Bangalore
+      title: Bangalore
+    - payload: Chennai
+      title: Chennai
+    - payload: Kolkata
+      title: Kolkata
+    - payload: Resources in India
+      title: Resources in India
+    text: 'We have hospitalization and ambulance services currently available in:'
+  utter_Gurgaon_hosp_support:
+  - buttons:
+    - payload: Emergency hotline and hospitalization support
+      title: Emergency hotline and hospitalization support
+    text: Please contact Ashish Shivang | 9958893431 | Ashish.Shivang@hdfcergo.com  for emergency hotline and hospitalization support || For 1st level escalation, reach out to garvit.jain@hdfcergo.com | 8860647164 || For 2nd level escalation, reach out to Kartik Yederi | 9663368821 | Kartik.Yederi@philips.com
+  utter_Pune_hosp_support:
+  - buttons:
+    - payload: Emergency hotline and hospitalization support
+      title: Emergency hotline and hospitalization support
+    text: Please contact Nilesh Raut | 7798989193 | Nilesh.raut@hdfcergo.com for emergency hotline and hospitalization support || For 1st level escalation, reach out to Abdul.Aleem@hdfcergo.com | 8879667392 || For 2nd level escalation, reach out to Kartik Yederi | 9663368821 | Kartik.Yederi@philips.com
+  utter_Mumbai_hosp_support:
+  - buttons:
+    - payload: Emergency hotline and hospitalization support
+      title: Emergency hotline and hospitalization support
+    text: Please contact Prasad Gaikwad | 8879942514 | Prasad.gaikwad@hdfcergo.com  for emergency hotline and hospitalization support || For 2nd level escalation, reach out to Kartik Yederi | 9663368821 | Kartik.Yederi@philips.com
+  utter_Bangalore_hosp_support:
+  - buttons:
+    - payload: Emergency hotline and hospitalization support
+      title: Emergency hotline and hospitalization support
+    text: Please contact Anand G | 9742057638 | Anand.G@hdfcergo.com for emergency hotline and hospitalization support || For 1st level escalation, reach out to Venkatesh.Gowda@hdfcergo.com | 9742047078 || For 2nd level escalation, reach out to Kartik Yederi | 9663368821 | Kartik.Yederi@philips.com
+  utter_Chennai_hosp_support:
+  - buttons:
+    - payload: Emergency hotline and hospitalization support
+      title: Emergency hotline and hospitalization support
+    text: Please contact Christopher George | 9789979508 | Christopher.George@hdfcergo.com for emergency hotline and hospitalization support || For 2nd level escalation, reach out to Kartik Yederi | 9663368821 | Kartik.Yederi@philips.com
+  utter_Kolkata_hosp_support:
+  - buttons:
+    - payload: Emergency hotline and hospitalization support
+      title: Emergency hotline and hospitalization support
+    text: Please contact Saugata Chatterjee | 9830314037 | Saugata.Chatterjee@hdfcergo.com  for emergency hotline and hospitalization support || For 2nd level escalation, reach out to Kartik Yederi | 9663368821 | Kartik.Yederi@philips.com
+  utter_homecare_expenses:
+  - buttons:
+    - payload: Resources in India
+      title: Resources in India
+    text: 'All employees, their spouse and 2 children would be eligible for a benefit of INR 20,000 per member in case they are tested positive for COVID-19. The benefit can be utilized to cover expenses for doctor consultation, pharmacy, diagnostics, PPE and vital signs monitoring equipment as part of homecare treatment. Please reach out to Kartik Yederi for filing claims (Kartik.Yederi@philips.com | 9663368821). For home nursing services, please contact: https://www.nightingales.in/services/short-term-nursing-care , https://www.portea.com/nursing/injection/'
+  utter_counselling_support:
+  - buttons:
+    - payload: Resources in India
+      title: Resources in India
+    text: Counselling support for employees and their families is available through our Employee Assistance Program (EAP)  by calling 1800 102 7293 or visiting https://www.livewell.optum.com and using access code - philips.eap
+  utter_online_doctor_consultation:
+  - buttons:
+    - payload: Online consultation between 8AM-7PM
+      title: Online consultation between 8AM-7PM
+    - payload: Online consultation between 9AM-9PM
+      title: Online consultation between 9AM-9PM
+    - payload: Resources in India
+      title: Resources in India
+    text: 'Employees can book online doctor consultation from HDFC Ergo App. For the first time, username would be the Philips email ID and password would be the first 4 alphabet of your name (in lower case) followed by date of birth in DDMMYY format. Post the first login , employees can set their own password. Click on tele-consultation card, select your doctor of choice, on the payment page use promo code received via SMS. In the interim, employees may reach out to Mr. Garvit Jain (garvit.jain@hdfcergo.com | +91-8860641764). Additionally, you can reach out to some doctors for online consultation according to their availability. Mandatory - After booking the appointment for online consultation, please share the details with the doctor (Please use the format) - Patient Name: | Age: | Area / Location: | Symptoms: | How many days has it been since the symptoms are observed?: | SpO2 Level: | Is patient on Oxygen Cylinder/Oxygen Concentrator?: | COVID-19 Test Done?:  | COVID-19 Result (+ve/-ve/Awaiting): | Is anyone else in the family having symptoms/had COVID? If yes, provide details:'
+  utter_OC_8AM-7PM:
+  - buttons:
+    - payload: Doctor consultation
+      title: Doctor consultation
+    text: 'Dr. Shivshankar (Philips Company Physician) | 8971660066 || Dr. Reena (General Physician and Diabetologist; available from 4pm-7pm; consultation to be booked via WhatsApp and sending the patients details; Paid Consultation) | 9448273748 || Dr. Dania (Family Physician: available from 10am-12pm & 4.30pm-7pm; consultation to be booked via WhatsApp and sending the patients details; Paid Consultation) | 8904002118'
+  utter_OC_9AM-9PM:
+  - buttons:
+    - payload: Doctor consultation
+      title: Doctor consultation
+    text: Dr. K N Mohan Rao | 9845270973 & Dr. K M Rajendra Rao | 9880634914 available from 6pm-8pm (Paid Consultation) || Dr. Karthik A | 9620588725 available from 12pm-2pm & 7pm-9pm (Paid Consultation)
+  utter_oxygen_concentrator:
+  - buttons:
+    - payload: Resources in India
+      title: Resources in India
+    text: Philips Oxygen Concentrators are available to help employees and their dependents with emergency provision of Philips Everflo 5 ltr on use and return basis (max 7 days) || Employees can apply for the Oxygen Concentrators by filling the form at https://forms.office.com/Pages/ResponsePage.aspx?id=LXpAGnV2F02GkrOsKFMG5IkWNXhLzMlHnt8MYb_xovVUOUlPQ1RGUDRRMzEzV1hWS0pOSTBIRzRRWC4u || Please refer to the document at https://intranet.philips.com/Pages/EAPoxygen.aspx#box=3#tab=3 for any queries || For further support, contact the helpline number 080-41895000.
+  utter_greet:
+  - buttons:
+    - payload: Resources in India
+      title: Resources in India
+    - payload: Resources in Karnataka
+      title: Resources in Karnataka
+    - payload: Fight Covid
+      title: Fight Covid
+    text: 'Hello! I am a Philips PHDSI Covid bot. Please choose any one of the following:'
+  utter_ambulance_service_India:
+  - buttons:
+    - payload: Resources in India
+      title: Resources in India
+    text: 'Ambulance Service : HelpNow | 8899889952 | Delhi, Pune Bangalore, Mumbai ||  Ziqitza | 9700001298 | All over India'
+  utter_volunteers:
+  - buttons:
+    - payload: Resources in India
+      title: Resources in India
+    text: 'Philips colleagues who are part of the volunteer team and are available anytime to address any Covid related issues: Ganesh Natarajan|  9741851111 | Ganesh.Iyer@philips.com || Sheela Biradar | 9538600877 | Sheela.Biradar@philips.com || Vandana Srivastava | 9008200588 | Vandana.Srivastav@philips.com || Sathish rate | 9886242507 | satishrate.s@philips.com || Sushma Balu | 9900794014 | Sushma.balu@philips.com || Debabrata Parida | 9845452096 | Debabrata.parida@philips.com || Bhaskar VC | 8105549549 | Bhaskar.C@philips.com || Ananth Srinivasan | 9845797753 | ananth.srinivasan@philips.com || Jaisimha Hn | 9980187296 | jaisimha.hn@philips.com) || Jyotiranjan Nayak | 9986661283 | jyotiranjan.nayak@philips.com'
+  utter_home_isolation_services:
+  - buttons:
+    - payload: Resources in India
+      title: Resources in India
+    text: Home isolation services active in Hyderabad and Chennai - Anvayaa (https://anvayaa.com/stayhome/, Mobile No - +917288818181)
+  utter_home_food_services:
+  - buttons:
+    - payload: Resources in India
+      title: Resources in India
+    text: 'Info about home food services in India: Healthy tiffin services (https://www.gqindia.com/live-well/content/meal-tiffin-services-in-delhi-mumbai-bangalore-pune-lucknow-shelter-at-home-covid) || Food delivery services during COVID-19 (https://lifestyle.livemint.com/news/talking-point/these-delivery-services-are-ensuring-safe-food-during-covid19-111619175141163.html) || Free food for COVID-19 patients at home (https://www.indiatimes.com/news/india/individuals-who-are-providing-free-food-for-covid-patients-at-home-538709.html)'
+  utter_testing_center_Karnataka:
+  - buttons:
+    - payload: In-house testing service
+      title: In-house testing service
+    - payload: In-clinic testing service
+      title: In-clinic testing service
+    - payload: Resources in Karnataka
+      title: Resources in Karnataka
+    text: 'Please choose any one of the following:'
+  utter_home_testing_service:
+  - buttons:
+    - payload: Testing centers
+      title: Testing centers
+    text: 'Utilize the online services or on call services provided by the following organizations for COVID-19 testing : Apollo Diagnostics | RTPCR | 9205478479 | https://www.apollodiagnostics.in/) | Apollo 247 - Online Doctor & Apollo Pharmacy App || SAP diagnostic center | RAT | 9739492675 || Cancyte Lab | RAT, RTPCR | 9738539775 || Uno Healthcare | RTPCR | 8880867890 || Orange Health | RTPCR | 9008111144 || Aster Labs | RAT, RTPCR | 080-45553333 || COVID Care at Home | www.FITTO-AT.com | 9900927935, 82402 30357 || Dr. Abhijit Ray, Dr. Aabir Kar, Dr. Sayonee Das || Barcode Biosciences | Home sample collection | 9844627638 || Prasanth IMAX diagnostics | Home sample collection | 9535757230, Ambareesh Anand Labs | Home sample collection | 6360664164 || Labgenius | Home sample collection, RTPCR, IGG Antibodies | 9108455522'
+  utter_clinic_testing_service:
+  - buttons:
+    - payload: Free clinic testing service
+      title: 'Free clinic testing service '
+    - payload: Paid clinic testing service
+      title: Paid clinic testing service
+    - payload: Testing centers
+      title: Testing centers
+    text: 'Please choose one of the following:'
+  utter_free_clinic_testing_service:
+  - buttons:
+    - payload: In-clinic testing service
+      title: In-clinic testing service
+    text: Free clinic RTPCR testing services are available at Bangalore. More info can be found at https://covidhelplinebangalore.com/list-of-free-government-covid-19-testing-centres-in-bangalore/
+  utter_paid_clinic_testing_service:
+  - buttons:
+    - payload: Govt labs
+      title: Govt labs
+    - payload: Private labs
+      title: Private labs
+    - payload: In-clinic testing service
+      title: In-clinic testing service
+    text: 'Please select any one of the following:'
+  utter_paid_gov_labs:
+  - buttons:
+    - payload: Paid clinic testing service
+      title: Paid clinic testing service
+    text: Info about government testing centers can be found at https://covid19.karnataka.gov.in/storage/pdf-files/Training-CapacityBuilding/Govt-Labs.pdf
+  utter_paid_private_labs:
+  - buttons:
+    - payload: Paid clinic testing service
+      title: Paid clinic testing service
+    text: 'Some private RTPCR/RAT testing labs are: Vydehi Hospital | 9741416860 | RAT, RTPCR | walk in between 9 to 3pm, results next day ||  Aveksha Hospital | 080-47277770 | RTPCR | walk in before 12.30, results in 24 to 48 hrs || Ananya Hospital | 9591999154 | RTPCR | walk in from 10 to 3.30 pm, results in 48 hr || Imperial Diagnostic Centre | 080-40908089 | RAT, RTPCR | walk in anytime, results next day || More info can be found at https://covid19.karnataka.gov.in/storage/pdf-files/Training-CapacityBuilding/Pvt%20Labs.pdf'
+  utter_ct_scan:
+  - buttons:
+    - payload: Resources in Karnataka
+      title: Resources in Karnataka
+    text: 'Some walk-in CT scan centers are: Padmashree Diagnostics | 8050022411 | 7am-10pm || Isha Diagnostic And Research | 7947154537 | 9am-7pm || Rxdx | 9014091111 | 6am-9pm) || Apollo Hospitals | 7947154730 | 9am-4pm || Medall Clumax Diagnostic | 8095555346 | 8am-9pm'
+  utter_ambulance_service_Karnataka:
+  - buttons:
+    - payload: Resources in Karnataka
+      title: Resources in Karnataka
+    text: 'Ambulance helplines : FREE 24/7 Ambulance Service by Government of Karnataka | 108  || ShibuLal of Infosys | 08047181616 | Bangalore, FREE SERVICE || Sanjeevani Ambulance | 9880188466, 9945191619, 9845291182, 9448496666 | Bangalore, Mysore, Tumkur ||  Yeshaswini Ambulance | 9845083398, 9741555508 | Bangalore, Mysore || RSS Sevabharathi | 9886598870, 9620615965 | Bangalore ||  Pooja Ambulance | 8970063325 | Bangalore || Mercy Helpline | 8660856709 | Bangalore ||  Vijayshree Ambulance | 8095976797 | Bangalore || Vishwannadh Ambulance | 9845734411 | Bangalore || Suresh Ambulance | 9380676231, 9964441244 | Bangalore || Krishnamurthi Ambulance | 8970063325 | Bangalore'
+  utter_bengaluru_covid_hospitals:
+  - buttons:
+    - payload: Designated Covid hospitals
+      title: Designated Covid hospitals
+    text: 'Designated covid hospitals are : Bowring Medical College | 9036304558 || RajaRajeshwari Medical College | 080-28437444) || Victoria Hospital | 080-26701150 || Command Hospital || HAL Hospital'
+  utter_mysuru_covid_hospitals:
+  - buttons:
+    - payload: Designated Covid hospitals
+      title: Designated Covid hospitals
+    text: 'Designated covid hospital : District Hospital | 0821-2517555'
+  utter_other_locations:
+  - buttons:
+    - payload: Designated Covid hospitals
+      title: Designated Covid hospitals
+    text: Info about designated covid hospitals in Karnataka can be found at https://covid19.karnataka.gov.in/new-page/Designated%20Covid-19%20Hospitals/en
+  utter_designated_covid_hospitals:
+  - buttons:
+    - payload: Bengaluru covid hospitals
+      title: Bengaluru covid hospitals
+    - payload: Mysuru covid hospitals
+      title: Mysuru covid hospitals
+    - payload: Other locations
+      title: Other locations
+    - payload: Resources in Karnataka
+      title: Resources in Karnataka
+    text: 'Designated covid hospitals are available a the following at the following locations:'
+  utter_Karnataka_helpline:
+  - buttons:
+    - payload: Resources in Karnataka
+      title: Resources in Karnataka
+    text: |-
+      State Government Helplines for Bangalore:  Apathamitra helpline:-14410. Call this helpline for COVID-19 related queries, questions on COVID-19 testing centres, COVID-19 vaccination centres and medical advice on COVID-19 symptoms, || Bengaluru COVID Central Helpline: 1912. Call for hospital bed booking, COVID Care Centre bed blocking and admission || BBMP ambulance facility and home isolation support || Karnataka Government Drugs Control Department COVID-19 War Room for Remdemsivir injection and Oxygen helpline: 8951755722
+      || General enquiry to BBMP for COVID-19: 080-2260000, 080-22481818 || BBMP Covid-19 zonal contact numbers are: Yelahanka : 9480685948 | Mahadevpura : 080-23010101, 080-20310102 | Bommanahalli : 8884666670, 080-28600954 | RR Nagar : 080-28601050,  | South : 8431816718 | East : 7411038024 | West : 080-68248454 | Dasarahalli : 080-28394909, 080-28393688
+  utter_quarantine_home:
+  - buttons:
+    - payload: Resources in Karnataka
+      title: Resources in Karnataka
+    text: 'In Benguluru, links to the home isolation/quarantine/treatment services : https://www.rxdx.in/covid-care-at-home-rxdx/, https://manipalhospitals.co.in/covid-home-packages/'
+  utter_hot_meals_delivery:
+  - buttons:
+    - payload: Resources in Karnataka
+      title: Resources in Karnataka
+    text: 'Home cooked meals during Covid quarantine in Bengaluru : Recipe Of Hope | Ullas -9901791982; Manjunath - 9738948947; Shivam - 99860 66215 || Cheran Kumer | 7483541562 || Sneha Vachhaney | 8884442726 || Utterly Homely | 9167347028 || Aduggemane | 7892403742; Whatsapp - 9916435389 || My Khaana | useful especially for those around Manyatha Tech Park; 9113065540, 9090108800'
+  utter_resources_in_Karnataka:
+  - buttons:
+    - payload: Testing centers
+      title: Testing centers
+    - payload: ' CT scan'
+      title: ' CT scan'
+    - payload: ' Ambulance service Karnataka'
+      title: ' Ambulance service Karnataka'
+    - payload: Designated Covid hospitals
+      title: Designated Covid hospitals
+    - payload: Karnataka helpline
+      title: Karnataka helpline
+    - payload: Quarantine home
+      title: Quarantine home
+    - payload: Hot meals delivery
+      title: Hot meals delivery
+    - payload: Fabiflu
+      title: Fabiflu
+    - payload: Triage
+      title: Triage
+    - payload: Live bed status
+      title: Live bed status
+    - payload: Hi bot
+      title: Previous query
+    text: 'We are providing the following Covid related services in Karnataka:'
+  utter_pan_India_aid:
+  - buttons:
+    - payload: Resources in India
+      title: Resources in India
+    text: CovRelief website (https://covidrelief.glideapp.io/) provides live tracking of vacant hospital beds in your city, oxygen availability, plasma, videos by renowned doctors || COVID-19 resources pertaining to hospital beds, oxygen cylinders, ICU and ventilators and medication across India is available in the links - Sprinklr / Explorer Dashboard (https://external.sprinklr.com/insights/explorer/dashboard/601b9e214c7a6b689d76f493/tab/4?id=DASHBOARD_601b9e214c7a6b689d76f493&home=1)  || India-wide COVID-19 resources by NASSCOM (https://community.nasscom.in/communities/COVID-19/india-wide-covid-19-resources)
+  utter_acknowledgement:
+  - text: I am a bot created by the Data and AI team, PHDSI, Bangalore based on the Rasa framework.
+  utter_further_help:
+  - text: What else can I help you with?
+  utter_sick_leave:
+  - buttons:
+    - payload: Resources in India
+      title: Resources in India
+    text: Employees can utilize sick leave for rest and recovering from Covid19. Please note that there is no limit as per policy and employees can avail leaves till they recover from Covid19. Please inform your manager and HR manager along with your CT/RT PCR test report and apply for leave in Workday once you recover and resume work.
+  utter_domiciliary_hospitalization_benefit:
+  - buttons:
+    - payload: Resources in India
+      title: Resources in India
+    text: Looking at the unavailability of beds during this pandemic, our insurance partner HDFC Ergo has agreed to cover Domiciliary Hospitalization for the month of May. Employees can cover cost of treatment availed at home for Covid19 positive cases for maximum up to 14 days per incident, which in the normal course would have required care and treatment at a hospital but is actually taken while confined at home due to non-availability of the beds in the hospitals. The diagnosis of Covid19 should be confirmed from a government authorized diagnostic center and the patient should be on active line of treatment which would have warranted hospitalization stay. Please note that this would not cover cost of medical equipment purchased such as ventilators, oxygen cylinders or concentrators, etc. Please reach out to Kartik Yedari for any claims (Kartik.Yederi@philips.com | +91 9663368821)
+  utter_cashless_hospitalization:
+  - buttons:
+    - payload: Resources in India
+      title: Resources in India
+    text: |-
+      Employees can login on HDFC URL https://claims.hdfcergo.com/webforms/HCSLogin.aspx. For first time access, username is your Philips email ID and password is the first 4 alphabets of your name (in lower case), followed by date of birth in DDMMYY format. Post that employees can set their own password. In the interim, employees can claim through cashless or reimbursement mode by following the instructions here. For cashless hospitalizations: a) Go to the HDFC Ergo website (https://www.hdfcergo.com/locators/cashless-hospitals-
+      network) and check if the hospital is on the network list b) Visit the TPA helpdesk desk when you visit the hospital c) Please note your global employee ID (Workday ID), Philips ID card and government ID proof of patient and share these details with the hospital insurance helpdesk d) The TPA will recognize the employee/dependent through the global employee ID e) For reimbursement claims, please reach out to location SPOCs.
+  utter_spoc:
+  - text: 'Gurgaon: Ashish Shivang | 9958893431 | Ashish.Shivang@hdfcergo.com || Pune: Nilesh Raut | 7798989193 | Nilesh.raut@hdfcergo.com || Mumbai: Prasad Gaikwad | 8879942514 | Prasad.gaikwad@hdfcergo.com || Bangalore: Anand G | 9742057638 | Anand.G@hdfcergo.com || Chennai: Christopher George | 9789979508| Christopher.George@hdfcergo.com || Kolkata: Saugata Chatterjee | 9830314037 | Saugata.Chatterjee@hdfcergo.com'
+  utter_fabiflu:
+  - buttons:
+    - payload: Resources in Karnataka
+      title: Resources in Karnataka
+    text: 'Bangalore :  Maruti & Company | S Umesh Surana | 080-40654400; Mercury Agencies | Bhawanlal Moolchand | 8041222500; Vimal Sales Corp. | Vimal | 9880715701, Vardhman Pharma | Mahendra Chowhan | 8041363232, 8049333111; Vimal Distributors | Vimal Kumar | 9372642750; Mehul Pharma | Paresh Kumar, Amit Kumar | 9844757977; Mahaveer Medi-Sales Pvt. | Vinod Jain | 8042522222 || Mangalore : Sai Radha Pharma | Manohar Shetty | 9480842900 || Tumkur : Sri Nagendra Drug Agencies | Nagendra | 9448381935 || Tiptur : Shiva Drug House | N. B. Shiva Kumar | 8134252183 || Belgaum : Sahara Med. & Gen. Dist. | Milind | 8312468351'
+  utter_triage:
+  - buttons:
+    - payload: Resources in Karnataka
+      title: Resources in Karnataka
+    text: |-
+      Designated Triage Centers in Bangalore : a Triage center in all MLA constituencies of Bangalore; These will work 24/7;The Triage centers shall have all the Medical equipments and medication required; The doctors in the Triage centers shall be in touch with the physicians attached to them; Once you walk into the center, the doctors will assess your condition and if required you will be moved to the COVID Care Center (CCC) attached to the triage center; There shall be sufficient number of Ambulances in the Triage center; Each Triage center shall be attached to an exclusive referral hospital/Medical College/Private Hospital. Following are the triages and asscociated hospitals. Please read in the following format; CONSTITUENCY |
+      TRIAGE & CCC | HOSPITAL ATTACHED :: YELAHANKA | Haj Bhavan/ Government Premetric Girls Hostel | Akash Medical College || BYATARAYANAPURA | Haj Bhavan | Akash Medical College || DASARAHALLI | Karmika Bhavana | Saptagiri Medical College || HEBBAL | Mangala Raitha Bhavan | Baptist Hospital || R.R NAGAR | North Eastern Girls Hostel, Jnana Bharati Campus | Raja Rajeshwari Nagar Medical College || SARVAGNANAGAR | Dr. B.R Ambedkar Medical College | Dr. B.R Ambedkar Medical College || K.R PURAM | HAL | K R Puram General Hospital || PULIKESHINAGAR | K.G Halli PHC | Dr. B.R Ambedkar Medical College || MALLESHWARAM | Govt. Unani Hospital | KC General Hospital || YESHWANTHPURA | Yeshwanthpura Maternity Home | Ramaiah Hospital || MAHALAXMI LAYOUT | Pine Line Hospital | Ramaiah Hospital || C.V RAMAN NAGAR | C.V Raman Nagar Hospital | C.V Raman Nagar Hospital || SHIVAJINAGAR | Bowring and Lady Curzon Hospitals | Bowring Hospital || GANDHI NAGARA | Govt. Ayurvedic College | St. Martha's Hospital || SHANTHINAGAR | Govt. Boys Arts College/Shanthinagar Maternity Home | KIMS || RAJAJINAGAR | Rajajinagar Maternity Home | ESI Medical College || GOVINDRAJ NAGAR | Kaveripuram Maternity Home | K.C General Hospital || CHIKPET | Wilson Garden Maternity Home | Victoria Hospital || VIJAYNAGARA | Magadi Road Maternity Home | ESI Medical College || CHAMARAJPET | JJR Nagar General Hospital | Victoria Hospital || B.T.M LAYOUT | Koramangala Indoor Stadium National Games Village/Adugodi Bosch Sports Complex | St. John's Hospital || MAHADEVPURA | Navya Shree International Hotel, ljipura | M.V.J Medical College / Vydehi Medical College || BASAVANAGUDI | Pobbathi Maternity Home | KIMS || PADMANABHANAGAR | Hoskerehalli Maternity Home | KIMS || JAYANAGAR | Jayanagar General Hospital | Rajiv Gandhi Institute of Chest Diseases || BOMMANAHALLI | Blossom Multispecialty Hospital / Vintage Inn Hotel | Oxford Medical College || BANGALORE SOUTH | Vintage Inn Hotel | Rajiv Gandhi Institute of Chest Diseases
+  utter_live_bed_status:
+  - buttons:
+    - payload: Resources in Karnataka
+      title: Resources in Karnataka
+    text: 'Some links for checking hospital bed availability : https://bbmp.gov.in/covid19.html || https://searchmybed.com/#/p/public-portal'
+  utter_supply_O2_products:
+  - text: 'Please reach out to the following suppliers in Bangalore. HOSPITAL/SOURCE | CONTACT :: Veeresh Concentrator | 6363661848 || Pan Air Products | 9845063166 || Deepak Oxygen Supplier | 9945812627 || Anand O2 Concentrator | 9845048790 || Metro Gas | 9886867637 || Universal Oxygen, Sashidhar | 9900502317 || Sridhar Balakrishna | 9845031889 || Prime Healers | 7975708181 || Amogh Gases Pvt., R Mohan Kumar | 9448483854 || Bhuruka Gases Ltd. | 7760976505 || Sadanand Pai | 9845543677 || Inox Air products | 9980099440 || Galaxy Air products | 9448821347/8867715015 || Peenya Industrial Gases | 9686196642 || Eureka Gases | 9035588758/9535509423 || Linde India | 9944948580, 9980358278 || Pai Industrial & Medical Gases | 9845063166 || Spec & Cal Gases | 9769577885 || Siga Gases | 080-22414271 || Jana Sewa | 8447390017 || NK Health Tech | 9628831824. More oxygen suppliers can be found in Philips Covid Handbook'
+  utter_fight_Covid:
+  - buttons:
+    - payload: Proning
+      title: Proning
+    - payload: Black fungus
+      title: Black fungus
+    - payload: Hi bot
+      title: Previous query
+    text: 'Please choose any one of the following:'
+  utter_proning:
+  - buttons:
+    - payload: Fight Covid
+      title: Fight Covid
+    text: Improve lung oxygenation by lying in the proning position. For more details, please visit http://www.emdocs.net/covid-19-awake-repositioning-proning/
+  utter_black_fungus:
+  - buttons:
+    - payload: Fight Covid
+      title: Fight Covid
+    text: BLACK FUNGUS is a fungal infection that mainly affects people who are on medication for other health problems that reduces their ability to fight environmental pathogens. CAUSES -Prolonged ICU stay; Co-morbidities; Immunosuppression by steroids. SYMPTOMS - sinusitis, one sided facial pain; numbness or swelling, blackish discoloration over bridge of nose; toothache; blurred or double vision with pain; chest pain; worsening of respiratory symptoms. MANAGE - control diabetes; reduce steroids; discontinue immunomodulating drugs; no antifungal prophylaxis; extensive surgical debridement; medical treatment. For more details, please visit https://www.icmr.gov.in/pdf/covid/techdoc/Mucormycosis_ADVISORY_FROM_ICMR_In_COVID19_time.pdf
+  utter_car_rent:
+  - buttons:
+    - payload: Resources in India
+      title: Resources in India
+    text: 'If you need a sanitized car with a reliable driver, connect with ECO Rent A Car’s COVID support team to arrange a car anytime (in all major cities in India). Org Name: ECOS (India) Mobility & Hospitality Pvt; Contact - Zeba Rafiq | 9205994580 | zeba.rafiq@ecorentacar.com || Nilesh Betharia | 9650850555 | Nilesh.betharia@ecorentacar.com. Some useful links - https://ecorentacar.com/tapcard/ECO.Europcar.India.Corporate.Fleet.Menu.pdf . Services provided - Delivery of medicines | Visits for CT scan and Medical Tests | Collection/delivery of oxygen concentrators | Collection/delivery food parcels | Ride for vaccinations | Assistance in getting oxygen cylinders filled. | Standby Cars (Sedan/SUV) for Emergency use'
+actions:
+- '...'
+- utter_greet
+- utter_i_am_a_bot
+- utter_noworries
+- utter_Gurgaon_hosp_support
+- utter_Pune_hosp_support
+- utter_Mumbai_hosp_support
+- utter_Bangalore_hosp_support
+- utter_Chennai_hosp_support
+- utter_Kolkata_hosp_support
+forms: {}
+e2e_actions: []
